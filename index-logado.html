@@ -6,444 +6,447 @@
 	<link href="./stylesheets/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="container">
-	<nav class="navbar navbar-default">
-		<h1>Selas Brazil</h1>
-		<h2>Cadastro de acessos Novo Seven</h2>
-	</nav>
+	<div class="container-fluid">
+		<header class="header">
+			<ul class="nav pull-right">
+				<li><a href="/logout.aspx"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+			</ul>
+			<img src="./images/logo.png" class="brand"/>
+			<h1>Selas Brazil</h1>
+			<h2>Cadastro de acessos Novo Seven</h2>
+		</header>
 		<div class="row">
-			<div class="sidebar col-md-3">
-			    <ul class="nav nav-sidebar">
-			        <li>
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administração<span class="caret"></span></a>
-			            <ul class="dropdown-menu">
-			                <li>
-			                    <a>Sistema</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/user/userList.aspx">Usuários</a>
-			                        </li>
-			                        <li>
-			                            <a href="/company/companyList.aspx">Empresas</a>
-			                        </li>
-			                        <li>
-			                            <a href="/usergroup/userGroupList.aspx">Grupos de usuários</a>
-			                        </li>
-			                        <li>
-			                            <a href="/systemroutine/systemRoutineList.aspx">Rotinas do sistema</a>
-			                        </li>
-			                        <li>
-			                            <a href="/news/newsList.aspx">Notícias</a>
-			                        </li>
-			                        <li>
-			                            <a href="/actor/actorList.aspx">Papeis</a>
-			                        </li>
-			                        <li>
-			                            <a href="/notification/notificationList.aspx">Notificações</a>
-			                        </li>
-			                        <li>
-			                            <a href="#">Selas (LOVs)</a>
-			                            <ul>
-			                                <li>
-			                                    <a href="/speciality/specialityList.aspx">Especialidades</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/license/licenseList.aspx">Licenças</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/influencelevel/influenceLevelList.aspx">Níveis de influência</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/product/productList.aspx">Produtos</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/role/roleList.aspx">Roles</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/target/targetList.aspx">Targets</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/sector/sectorList.aspx">Setor</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/subtarget/subTargetList.aspx">Sub-targets</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/addoptionladder/addoptionLadderList.aspx">Tendências à adoção</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/prescribingbehaviour/prescribingBehaviourList.aspx">Tendências à prescrição</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/personaltitle/personalTitleList.aspx">Tratamentos</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/contacttype/contactTypeList.aspx">Tipo de contatos</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/institutiontype/institutionTypeList.aspx">Tipos de instituição</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/institutionsubtype/institutionSubTypeList.aspx">Sub-tipos de instituição</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/degree/degreeList.aspx">Titulações</a>
-			                                </li>
-			                                <li>
-			                                    <a href="/businessunit/businessUnitList.aspx">Unidades de negócio</a>
-			                                </li>
-			                            </ul>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">Contatos e Instituições</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/contact/contactRequest.aspx">Contatos</a>
-			                        </li>
-			                        <li>
-			                            <a href="/institution/institutionRequest.aspx">Instituições</a>
-			                        </li>
-			                        <li>
-			                            <a href="/approval/approvalHandle.aspx">Workflow</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">Segmentação</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/segmentation/segmentationHandle.aspx">Segmentação</a>
-			                        </li>
-			                        <li>
-			                            <a href="/segmentation/segmentationTwoHandle.aspx">Segmentação 2</a>
-			                        </li>
-			                        <li>
-			                            <a href="/segmentation/segmentationThreeHandle.aspx">Segmentação 3</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			            </ul>
-			        </li>
-			        <li>
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eventos<span class="caret"></span></a>
-			            <ul class="dropdown-menu">
-			                <li>
-			                    <a href="#">Cadastros</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/creditcard/creditCardList.aspx">Cartão de crédito</a>
-			                        </li>
-			                        <li>
-			                            <a href="/costcenter/costCenterList.aspx">Centros de custo</a>
-			                        </li>
-			                        <li>
-			                            <a href="/ledgeraccount/ledgerAccountList.aspx">Contas Contábeis</a>
-			                        </li>
-			                        <li>
-			                            <a href="/eventflow/eventFlowList.aspx">Fluxos de aprovação de eventos</a>
-			                        </li>
-			                        <li>
-			                            <a href="/provider/providerList.aspx">Fornecedor</a>
-			                        </li>
-			                        <li>
-			                            <a href="/internalorder/internalOrderList.aspx">Internal Order / WBS</a>
-			                        </li>
-			                        <li>
-			                            <a href="/productfocus/productFocusList.aspx">Produtos foco</a>
-			                        </li>
-			                        <li>
-			                            <a href="/service/serviceList.aspx">Serviços patrocináveis</a>
-			                        </li>
-			                        <li>
-			                            <a href="/invoiceType/invoiceTypeList.aspx">Tipo de Item de Fatura</a>
-			                        </li>
-			                        <li>
-			                            <a href="/eventtype/eventTypeList.aspx">Tipos de eventos</a>
-			                        </li>
-			                        <li>
-			                            <a href="/bank/bankList.aspx">Bancos</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a>Eventos</a>
-			                     <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/events/eventList.aspx">Cadastro de Eventos</a>
-			                        </li>
-			                        <li>
-			                            <a href="/eventcontact/eventContactList.aspx">Convites</a>
-			                        </li>
-			                        <li>
-			                            <a href="/contract/contractList.aspx">Convites Speaker</a>
-			                        </li>
-			                        <li>
-			                            <a href="/eventcontact/eventContactGroup.aspx">Convites sem logística</a>
-			                        </li>
-			                        <li>
-			                            <a href="/eventcontact/eventContactWorkflowHandle.aspx">Workflow</a>
-			                        </li>
-			                        <li>
-			                            <a href="/eventrequest/eventRequestList.aspx">Solicitações de eventos</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a>Financeiro</a>
-			                     <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/eventsfinancial/citiInvoiceList.aspx">Faturas Citi (Passagem Aérea)</a>
-			                        </li>
-			                        <li>
-			                            <a href="/eventsfinancial/eventBillingList.aspx">Faturas de despesas</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			            </ul>
-			        </li>
-			        <li>
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Grade de visitas<span class="caret"></span></a>
-			            <ul class="dropdown-menu">
-			                <li>
-			                    <a href="#">Cadastros</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/productgrid/productGridList.aspx">Produtos</a>
-			                        </li>
-			                        <li>
-			                            <a href="/material/materialList.aspx">Materiais</a>
-			                        </li>
-			                        <li>
-			                            <a href="/additionalsegmentation/additionalSegmentationList.aspx">Segmentações adicionais</a>
-			                        </li>
-			                        <li>
-			                            <a href="/interface/uploadResearchAudit.aspx">Carga de AUDIT</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">Configurações</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/frequencyvisit/frequencyVisitList.aspx">Frequências de visita</a>
-			                        </li>
-			                        <li>
-			                            <a href="/productpriority/productPriorityList.aspx">Produtos e prioridades</a>
-			                        </li>
-			                        <li>
-			                            <a href="/productmessage/productMessageList.aspx">Mensagens por produto</a>
-			                        </li>
-			                        <li>
-			                            <a href="/productgridadditionalsegmentation/productGridAdditionalSegmentationList.aspx">
-			                            Segm. adicional por produto</a>
-			                        </li>
-			                        <li>
-			                            <a href="/prioritytargetsubtarget/priorityTargetSubTargetList.aspx">Prioridade por target e sub-target</a>
-			                        </li>
-			                        <li>
-			                            <a href="/visitgrid/visitGridProcedure.aspx">Geração da grade de visitas</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="/visitgrid/visitGridList.aspx">Consultar grade de visitas</a>
-			                </li>
-			            </ul>
-			        </li>
-			        <li>
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">APP's<span class="caret"></span></a>
-			            <ul class="dropdown-menu">
-			                <li>
-			                    <a href="#">Cadastros</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/novosevenaccess/novoSevenAccessList.aspx">Acessos</a>
-			                        </li>
-			                        <li>
-			                            <a href="/novosevensupport/novoSevenSupportList.aspx">Apoios</a>
-			                        </li>
-			                        <li>
-			                            <a href="/approach/approachList.aspx">Abordagens</a>
-			                        </li>
-			                        <li>
-			                            <a href="/indication/indicationList.aspx">Indicações</a>
-			                        </li>
-			                        <li>
-			                            <a href="/novoseveninfluence/novoSevenInfluenceList.aspx">Influências</a>
-			                        </li>
-			                        <li>
-			                            <a href="/keymessage/keyMessageList.aspx">Mensagens chave</a>
-			                        </li>
-			                        <li>
-			                            <a href="/contactinstitutiontarget/contactInstitutionTargetList.aspx">Metas por contato</a>
-			                        </li>
-			                        <li>
-			                            <a href="/note/noteList.aspx">Recados</a>
-			                        </li>
-			                        <li>
-			                            <a href="/justification/justificationList.aspx">Justificativas de TOT</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">Lançamentos</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/agenda/agendaList.aspx">Agenda</a>
-			                        </li>
-			                        <li>
-			                            <a href="/agenda/agendaList_v2.aspx">Agenda - lanctos fracionários</a>
-			                        </li>
-			                        <li>
-			                            <a href="/demand/demandList.aspx">Demandas</a>
-			                        </li>
-			                        <li>
-			                            <a href="/institutionindication/institutionIndicationList.aspx">Indicações por instituição</a>
-			                        </li>
-			                        <li>
-			                            <a href="/actionplan/actionPlanList.aspx">Plano de Ação</a>
-			                        </li>
-			                        <li>
-			                            <a href="/engagementplan/engagementPlanHandle.aspx">Plano de Engajamento</a>
-			                        </li>
-			                        <li>
-			                            <a href="/question/questionList.aspx">Questionários</a>
-			                        </li>
-			                        <li>
-			                            <a href="/visit/visitList.aspx">Visitas</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">Case Base Study</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/demand/reportDemandUser.aspx">Demanda consultor</a>
-			                        </li>
-			                        <li>
-			                            <a href="/demand/reportDemandDistrictManager.aspx">Demanda gerente distrital</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			            </ul>
-			        </li>
-			        <li>
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ferramentas<span class="caret"></span></a>
-			            <ul class="dropdown-menu">
-			                <li>
-			                    <a href="/interface/interfaceList.aspx">Arquivos de interface</a>
-			                </li>
-			                <li>
-			                    <a href="/interface/dataImporting.aspx">Carga de novos contatos e instituições</a>
-			                </li>
-			                <li>
-			                    <a href="/interface/uploadSiebel.aspx">Integração Selas X Siebel</a>
-			                </li>
-			                <li>
-			                    <a href="/interface/uploadSegmentation.aspx">Carga de T&amp;S</a>
-			                </li>
-			                <li>
-			                    <a href="/zipcodesectorbrick/zipCodeSectorBrickList.aspx">Consulta CEP - Brick</a>
-			                </li>
-			                <li>
-			                    <a href="/eventcontact/userApprovalSubstituteHandle.aspx">Definir aprovador substituto de convites</a>
-			                </li>
-			                <li>
-			                    <a href="/changepassword/changePassword.aspx">Alterar senha</a>
-			                </li>
-			            </ul>
-			        </li>
-			        <li>
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Relatórios<span class="caret"></span></a>
-			            <ul class="dropdown-menu">
-			                <li>
-			                    <a href="#">Contatos</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/report/contactExcelReport.aspx">Relatório contatos - Cadastro</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/reportContactChangedIntegration.aspx">Relatório contatos - Alteração</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/contactSegmentationExcelReport.aspx">Relatório contatos - Segmentação</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/contactSegmentationTwoExcelReport.aspx">Relatório contatos - Segmentação 2</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/contactSegmentationThreeExcelReport.aspx">Relatório contatos - Segmentação 3</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">Eventos</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/report/eventParticipantsReport.aspx">Relatórios de Participantes em Eventos</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/eventExcelReport.aspx">Relatório Eventos Excel</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/reportSummary.aspx">Eventos Sumário</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/reportEventsFinancial.aspx">Relatório Fee Mensal</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/reportDashboardEventsFinancial.aspx">Dashboard Financeiro de Eventos</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">Seven Team System</a>
-			                    <ul class="dropdown-menu">
-			                        <li id="ctl00_liSTSRelatoriosKPI_CPC">
-			                            <a href="/report/report_STS_KPI_CPC.aspx">Relatórios KPI - CPC e Frequência</a>
-			                        </li>
-			                        <li id="ctl00_liSTSRelatoriosKPI_MDV">
-			                            <a href="/report/report_STS_KPI_MDV.aspx">Relatórios KPI MDV e TOT Fracionário</a>
-			                        </li>
-			                        <li id="ctl00_liSTSRelatoriosKPI_MDV_V2">
-			                            <a href="/report/report_STS_KPI_MDV_V2.aspx">Relatórios KPI MDV e TOT</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/actionPlanExcelReport.aspx">Relatório de planos de ação</a>
-			                        </li>
-			                        <li>
-			                            <a href="/report/reportStock.aspx">Relatório de estoque diário</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">APP's</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/report/report_STS_Synchronism.aspx">Relatório de sincronização</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="#">Grade de visitas</a>
-			                    <ul class="dropdown-menu">
-			                        <li>
-			                            <a href="/report/visitGridExcelReport.aspx">Relatórios de Grade de Visitas</a>
-			                        </li>
-			                    </ul>
-			                </li>
-			                <li>
-			                    <a href="/digitalrelationship/digitalrelationshipList.aspx">Relatório Relacionamento digital</a>
-			                </li>
-			            </ul>
-			        </li>
-			        <li id="ctl00_liEndSession">
-			            <a href="/logout.aspx">Sair</a>
-			        </li>
-			    </ul>
-
+			<div class="col-md-3">
+				<div class="sidebar">
+					<img src="./images/selas.png" class="brand"/>
+				    <ul class="nav nav-sidebar">
+				        <li>
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-eye-open"></span> Administração<span class="caret"></span></a>
+				            <ul class="dropdown-menu">
+				                <li>
+				                    <a>Sistema</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/user/userList.aspx">Usuários</a>
+				                        </li>
+				                        <li>
+				                            <a href="/company/companyList.aspx">Empresas</a>
+				                        </li>
+				                        <li>
+				                            <a href="/usergroup/userGroupList.aspx">Grupos de usuários</a>
+				                        </li>
+				                        <li>
+				                            <a href="/systemroutine/systemRoutineList.aspx">Rotinas do sistema</a>
+				                        </li>
+				                        <li>
+				                            <a href="/news/newsList.aspx">Notícias</a>
+				                        </li>
+				                        <li>
+				                            <a href="/actor/actorList.aspx">Papeis</a>
+				                        </li>
+				                        <li>
+				                            <a href="/notification/notificationList.aspx">Notificações</a>
+				                        </li>
+				                        <li>
+				                            <a href="#">Selas (LOVs)</a>
+				                            <ul>
+				                                <li>
+				                                    <a href="/speciality/specialityList.aspx">Especialidades</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/license/licenseList.aspx">Licenças</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/influencelevel/influenceLevelList.aspx">Níveis de influência</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/product/productList.aspx">Produtos</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/role/roleList.aspx">Roles</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/target/targetList.aspx">Targets</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/sector/sectorList.aspx">Setor</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/subtarget/subTargetList.aspx">Sub-targets</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/addoptionladder/addoptionLadderList.aspx">Tendências à adoção</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/prescribingbehaviour/prescribingBehaviourList.aspx">Tendências à prescrição</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/personaltitle/personalTitleList.aspx">Tratamentos</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/contacttype/contactTypeList.aspx">Tipo de contatos</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/institutiontype/institutionTypeList.aspx">Tipos de instituição</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/institutionsubtype/institutionSubTypeList.aspx">Sub-tipos de instituição</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/degree/degreeList.aspx">Titulações</a>
+				                                </li>
+				                                <li>
+				                                    <a href="/businessunit/businessUnitList.aspx">Unidades de negócio</a>
+				                                </li>
+				                            </ul>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">Contatos e Instituições</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/contact/contactRequest.aspx">Contatos</a>
+				                        </li>
+				                        <li>
+				                            <a href="/institution/institutionRequest.aspx">Instituições</a>
+				                        </li>
+				                        <li>
+				                            <a href="/approval/approvalHandle.aspx">Workflow</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">Segmentação</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/segmentation/segmentationHandle.aspx">Segmentação</a>
+				                        </li>
+				                        <li>
+				                            <a href="/segmentation/segmentationTwoHandle.aspx">Segmentação 2</a>
+				                        </li>
+				                        <li>
+				                            <a href="/segmentation/segmentationThreeHandle.aspx">Segmentação 3</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				            </ul>
+				        </li>
+				        <li>
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-calendar"></span> Eventos<span class="caret"></span></a>
+				            <ul class="dropdown-menu">
+				                <li>
+				                    <a href="#">Cadastros</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/creditcard/creditCardList.aspx">Cartão de crédito</a>
+				                        </li>
+				                        <li>
+				                            <a href="/costcenter/costCenterList.aspx">Centros de custo</a>
+				                        </li>
+				                        <li>
+				                            <a href="/ledgeraccount/ledgerAccountList.aspx">Contas Contábeis</a>
+				                        </li>
+				                        <li>
+				                            <a href="/eventflow/eventFlowList.aspx">Fluxos de aprovação de eventos</a>
+				                        </li>
+				                        <li>
+				                            <a href="/provider/providerList.aspx">Fornecedor</a>
+				                        </li>
+				                        <li>
+				                            <a href="/internalorder/internalOrderList.aspx">Internal Order / WBS</a>
+				                        </li>
+				                        <li>
+				                            <a href="/productfocus/productFocusList.aspx">Produtos foco</a>
+				                        </li>
+				                        <li>
+				                            <a href="/service/serviceList.aspx">Serviços patrocináveis</a>
+				                        </li>
+				                        <li>
+				                            <a href="/invoiceType/invoiceTypeList.aspx">Tipo de Item de Fatura</a>
+				                        </li>
+				                        <li>
+				                            <a href="/eventtype/eventTypeList.aspx">Tipos de eventos</a>
+				                        </li>
+				                        <li>
+				                            <a href="/bank/bankList.aspx">Bancos</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a>Eventos</a>
+				                     <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/events/eventList.aspx">Cadastro de Eventos</a>
+				                        </li>
+				                        <li>
+				                            <a href="/eventcontact/eventContactList.aspx">Convites</a>
+				                        </li>
+				                        <li>
+				                            <a href="/contract/contractList.aspx">Convites Speaker</a>
+				                        </li>
+				                        <li>
+				                            <a href="/eventcontact/eventContactGroup.aspx">Convites sem logística</a>
+				                        </li>
+				                        <li>
+				                            <a href="/eventcontact/eventContactWorkflowHandle.aspx">Workflow</a>
+				                        </li>
+				                        <li>
+				                            <a href="/eventrequest/eventRequestList.aspx">Solicitações de eventos</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a>Financeiro</a>
+				                     <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/eventsfinancial/citiInvoiceList.aspx">Faturas Citi (Passagem Aérea)</a>
+				                        </li>
+				                        <li>
+				                            <a href="/eventsfinancial/eventBillingList.aspx">Faturas de despesas</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				            </ul>
+				        </li>
+				        <li>
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-tags"></span> Grade de visitas<span class="caret"></span></a>
+				            <ul class="dropdown-menu">
+				                <li>
+				                    <a href="#">Cadastros</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/productgrid/productGridList.aspx">Produtos</a>
+				                        </li>
+				                        <li>
+				                            <a href="/material/materialList.aspx">Materiais</a>
+				                        </li>
+				                        <li>
+				                            <a href="/additionalsegmentation/additionalSegmentationList.aspx">Segmentações adicionais</a>
+				                        </li>
+				                        <li>
+				                            <a href="/interface/uploadResearchAudit.aspx">Carga de AUDIT</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">Configurações</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/frequencyvisit/frequencyVisitList.aspx">Frequências de visita</a>
+				                        </li>
+				                        <li>
+				                            <a href="/productpriority/productPriorityList.aspx">Produtos e prioridades</a>
+				                        </li>
+				                        <li>
+				                            <a href="/productmessage/productMessageList.aspx">Mensagens por produto</a>
+				                        </li>
+				                        <li>
+				                            <a href="/productgridadditionalsegmentation/productGridAdditionalSegmentationList.aspx">
+				                            Segm. adicional por produto</a>
+				                        </li>
+				                        <li>
+				                            <a href="/prioritytargetsubtarget/priorityTargetSubTargetList.aspx">Prioridade por target e sub-target</a>
+				                        </li>
+				                        <li>
+				                            <a href="/visitgrid/visitGridProcedure.aspx">Geração da grade de visitas</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="/visitgrid/visitGridList.aspx">Consultar grade de visitas</a>
+				                </li>
+				            </ul>
+				        </li>
+				        <li>
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-phone"></span> APP's<span class="caret"></span></a>
+				            <ul class="dropdown-menu">
+				                <li>
+				                    <a href="#">Cadastros</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/novosevenaccess/novoSevenAccessList.aspx">Acessos</a>
+				                        </li>
+				                        <li>
+				                            <a href="/novosevensupport/novoSevenSupportList.aspx">Apoios</a>
+				                        </li>
+				                        <li>
+				                            <a href="/approach/approachList.aspx">Abordagens</a>
+				                        </li>
+				                        <li>
+				                            <a href="/indication/indicationList.aspx">Indicações</a>
+				                        </li>
+				                        <li>
+				                            <a href="/novoseveninfluence/novoSevenInfluenceList.aspx">Influências</a>
+				                        </li>
+				                        <li>
+				                            <a href="/keymessage/keyMessageList.aspx">Mensagens chave</a>
+				                        </li>
+				                        <li>
+				                            <a href="/contactinstitutiontarget/contactInstitutionTargetList.aspx">Metas por contato</a>
+				                        </li>
+				                        <li>
+				                            <a href="/note/noteList.aspx">Recados</a>
+				                        </li>
+				                        <li>
+				                            <a href="/justification/justificationList.aspx">Justificativas de TOT</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">Lançamentos</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/agenda/agendaList.aspx">Agenda</a>
+				                        </li>
+				                        <li>
+				                            <a href="/agenda/agendaList_v2.aspx">Agenda - lanctos fracionários</a>
+				                        </li>
+				                        <li>
+				                            <a href="/demand/demandList.aspx">Demandas</a>
+				                        </li>
+				                        <li>
+				                            <a href="/institutionindication/institutionIndicationList.aspx">Indicações por instituição</a>
+				                        </li>
+				                        <li>
+				                            <a href="/actionplan/actionPlanList.aspx">Plano de Ação</a>
+				                        </li>
+				                        <li>
+				                            <a href="/engagementplan/engagementPlanHandle.aspx">Plano de Engajamento</a>
+				                        </li>
+				                        <li>
+				                            <a href="/question/questionList.aspx">Questionários</a>
+				                        </li>
+				                        <li>
+				                            <a href="/visit/visitList.aspx">Visitas</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">Case Base Study</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/demand/reportDemandUser.aspx">Demanda consultor</a>
+				                        </li>
+				                        <li>
+				                            <a href="/demand/reportDemandDistrictManager.aspx">Demanda gerente distrital</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				            </ul>
+				        </li>
+				        <li>
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-wrench"></span> Ferramentas<span class="caret"></span></a>
+				            <ul class="dropdown-menu">
+				                <li>
+				                    <a href="/interface/interfaceList.aspx">Arquivos de interface</a>
+				                </li>
+				                <li>
+				                    <a href="/interface/dataImporting.aspx">Carga de novos contatos e instituições</a>
+				                </li>
+				                <li>
+				                    <a href="/interface/uploadSiebel.aspx">Integração Selas X Siebel</a>
+				                </li>
+				                <li>
+				                    <a href="/interface/uploadSegmentation.aspx">Carga de T&amp;S</a>
+				                </li>
+				                <li>
+				                    <a href="/zipcodesectorbrick/zipCodeSectorBrickList.aspx">Consulta CEP - Brick</a>
+				                </li>
+				                <li>
+				                    <a href="/eventcontact/userApprovalSubstituteHandle.aspx">Definir aprovador substituto de convites</a>
+				                </li>
+				                <li>
+				                    <a href="/changepassword/changePassword.aspx">Alterar senha</a>
+				                </li>
+				            </ul>
+				        </li>
+				        <li>
+				            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-stats"></span> Relatórios<span class="caret"></span></a>
+				            <ul class="dropdown-menu">
+				                <li>
+				                    <a href="#">Contatos</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/report/contactExcelReport.aspx">Relatório contatos - Cadastro</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/reportContactChangedIntegration.aspx">Relatório contatos - Alteração</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/contactSegmentationExcelReport.aspx">Relatório contatos - Segmentação</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/contactSegmentationTwoExcelReport.aspx">Relatório contatos - Segmentação 2</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/contactSegmentationThreeExcelReport.aspx">Relatório contatos - Segmentação 3</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">Eventos</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/report/eventParticipantsReport.aspx">Relatórios de Participantes em Eventos</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/eventExcelReport.aspx">Relatório Eventos Excel</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/reportSummary.aspx">Eventos Sumário</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/reportEventsFinancial.aspx">Relatório Fee Mensal</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/reportDashboardEventsFinancial.aspx">Dashboard Financeiro de Eventos</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">Seven Team System</a>
+				                    <ul class="dropdown-menu">
+				                        <li id="ctl00_liSTSRelatoriosKPI_CPC">
+				                            <a href="/report/report_STS_KPI_CPC.aspx">Relatórios KPI - CPC e Frequência</a>
+				                        </li>
+				                        <li id="ctl00_liSTSRelatoriosKPI_MDV">
+				                            <a href="/report/report_STS_KPI_MDV.aspx">Relatórios KPI MDV e TOT Fracionário</a>
+				                        </li>
+				                        <li id="ctl00_liSTSRelatoriosKPI_MDV_V2">
+				                            <a href="/report/report_STS_KPI_MDV_V2.aspx">Relatórios KPI MDV e TOT</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/actionPlanExcelReport.aspx">Relatório de planos de ação</a>
+				                        </li>
+				                        <li>
+				                            <a href="/report/reportStock.aspx">Relatório de estoque diário</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">APP's</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/report/report_STS_Synchronism.aspx">Relatório de sincronização</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="#">Grade de visitas</a>
+				                    <ul class="dropdown-menu">
+				                        <li>
+				                            <a href="/report/visitGridExcelReport.aspx">Relatórios de Grade de Visitas</a>
+				                        </li>
+				                    </ul>
+				                </li>
+				                <li>
+				                    <a href="/digitalrelationship/digitalrelationshipList.aspx">Relatório Relacionamento digital</a>
+				                </li>
+				            </ul>
+				        </li>
+				    </ul>
+				</div>
 			</div>
 			<div class="col-md-9">
 				<ol class="breadcrumb">
